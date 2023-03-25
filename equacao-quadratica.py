@@ -1,6 +1,11 @@
-a = int(input('Informe o valor de A: '))
-b = int(input('Informe o valor de B: '))
-c = int(input('Informe o valor de C: '))
+import sys
+
+print('Informe o valor de A: {}.'.format(sys.argv[1]))
+a = int(sys.argv[1])
+print('Informe o valor de B: {}.'.format(sys.argv[2]))
+b = int(sys.argv[2])
+print('Informe o valor de C: {}.'.format(sys.argv[3]))
+c = int(sys.argv[3])
 
 delta = (b ** 2) - (4 * a * c)
 
